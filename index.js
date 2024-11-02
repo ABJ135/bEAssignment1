@@ -1,9 +1,7 @@
 const express = require('express')
 const app = express()
 const port = 3000
-app.listen(port,()=>{
-    console.log("Server is created")
-})
+
 const book = [
     {
         id: 1 ,
@@ -37,3 +35,7 @@ app.put('/put',(req, res) => {
     res.status(201).json({"message":"This is put request"})
 }
 )    
+
+app.listen(port,()=>{
+    console.log("Server is created")
+})
