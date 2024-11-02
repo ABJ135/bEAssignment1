@@ -20,20 +20,20 @@ app.get('/list',(req,res)=>{
     console.log(req.body, "body")
 })
 app.put('/update',(req,res)=>{
-    res.status(201).json("This is put request")
+    res.status(201).json({"message":"This is put request"})
 })
 app.post('/add',(req,res)=>{
-    res.status(202).json("This is post request")
+    res.status(202).json({"message":"This is post request"})
 })
 
 app.delete('/delete',(req,res)=>{   
      
-    res.status(201).json("This is delete request");
+    res.status(201).json({"message":"This is delete request"});
 }
 )
 
 app.put('/put',(req, res) => {
     // console.log("put request")
-    res.status(201).json("This is put request")
+    res.status(201).json({"message":"This is put request"})
 }
 )    
